@@ -1,0 +1,60 @@
+.Heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: 28px;
+    font-weight: 600;
+    background: linear-gradient(to right, purple, blue, purple);
+    color: white;
+    margin: 20px 0px;
+    width: 75%;
+    border-radius: 20px;
+}
+.Companies-Page {
+    background: linear-gradient(to bottom, #E5E3E3, rgb(240, 240, 240), white);
+    height: fit-content;
+    padding-bottom: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Companies {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+.Company-card {
+    height: 150px;
+    width: 199.6px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid silver;
+}
+.Company-name {
+    font-size: 18px;
+    font-weight:600; 
+}
+.Company-logo {
+    width: 140px;
+    height: 80px;
+    cursor: pointer;
+}
+.ViewAllBtn {
+    background-color: #5341FF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.ViewAllBtn:hover {
+    background-color: #123263;
+    transform: scale(1.1);
+}

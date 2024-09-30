@@ -1,0 +1,32 @@
+.container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    height: 100%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.search {
+    height: 100%;
+    width: 30%;
+    align-items: center;
+    display: flex;
+    
+}
+input {
+    height: 40%;
+    width: 70%;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0px 15px;
+    color: white;
+}
+.Search-icon {
+    position: absolute;
+    right: 110px;
+}

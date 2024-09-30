@@ -1,0 +1,71 @@
+.my-header {
+    background-color: #1A1450;
+    color: #fff;
+    display: flex;
+    height: 80px;
+    font-family: "Arial";
+}
+.header-logo {
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+.my-img {
+    height: 70%;
+    position: relative;
+    left: 80px;
+    animation: my-img-spin infinite .3s linear;
+}
+@keyframes my-img-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.logo-name {
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    left: 90px;
+    color: #00D8FF;
+}
+.nav-items {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: 200;
+    cursor: pointer;
+}
+.nav-items li:hover {
+    color: #00D8FF;
+    transform: scale(1.2);
+    transition:  transform .3s;
+    text-shadow:0px 0px 2px white;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+    justify-content: flex-end;
+}
+button {
+    background-color: #0000FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.b:hover {
+    background-color: white;
+    color: #0000FF;
+    transform: scale(1.2);
+    transition: transform .3s;
+    font-weight: 600;
+}
