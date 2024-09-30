@@ -1,0 +1,64 @@
+.my-card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    height: 270px;
+    font-size: 18px;
+}
+
+.card-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.changed-card-button {
+    background-color: #94060F;
+    border: none;
+    padding: 5px 10px;
+    color: #e0e0e0
+}
+
+.my-icon {
+    font-size: 30px;
+    color: #007bff;
+}
+
+.my-icon-click {
+    font-size: 30px;
+    color: #94060F;
+}
+
+.my-text {
+    font-weight: 700;
+    font-size: 20px;
+}
+.totalDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sortButton {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #FF0000;
+    border-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}

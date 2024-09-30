@@ -1,0 +1,343 @@
+/* #idp {
+    color: orange;
+}
+.hii{
+    font-size: 50px;
+}
+.border-div {
+    font-size: 20px;
+    padding-left: 10px;
+    border: 2px solid brown;
+}
+.Another-border{
+    padding-left: 10px;
+    border: width 2px; 
+    border-style: dotted;
+    border-color: crimson;
+}
+.name {
+    border-top: 20px dotted red;
+    border-left: 20px solid blue;
+    border-right: 20px solid green;
+    border-bottom: 20px dashed yellow;
+}
+.parent {
+    margin: 50px;
+    background-color: turquoise;
+    padding: 20px;
+    border-top: 20px solid red;
+    border-left: 20px solid blue;
+    border-right: 20px solid green;
+    border-bottom: 20px solid yellow;     */
+    /* width: 100%;  */
+    /* font-size: 25px;
+    max-width: 900px;
+    min-width: 50px; */
+    /* border-radius: 20px; */
+    /* border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    box-shadow: 7px 7px 9px;
+} */
+/* .parent:hover {
+    color: turquoise;
+    background-color: black;
+} */
+
+/* .bg {
+    background-image: url("/images.jpeg");
+    height: 100svh;
+    width: 100%;
+    font-weight: 900;
+    font-size: 80px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: transparent;
+    background-clip: text;
+} */
+ /* .out {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    position: relative;
+ }
+ .in{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+ }
+ body {
+    height: 250svh;
+ }
+ .fix {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    position: fixed;
+ }
+ .stck {
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    position: sticky;
+    top: 50px;
+ } */
+/* 
+ table,td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+ }
+ table {
+    border-radius: 10px;
+ }
+ tr:nth-child(odd){
+    background-color: pink;
+ }
+ tr:nth-child(1) {
+    background-color: springgreen;
+    font-weight: 900;
+ }
+ tr:nth-child(even) {
+    background-color: skyblue;
+ }
+ tr:hover {
+    background-color: darkorange;
+ } */
+
+ /* .Parent1 {
+   position: relative;
+   height: 50px;
+   width: 120px;
+ }
+ .child1 {
+   border: 2px solid black;
+   padding: 7px;
+   font-size: 20px;
+   border-radius: 10px;
+   position: absolute;
+   cursor: pointer;
+ }
+ .options {
+   border: 1px solid black;
+   padding: 15px;
+ }
+ .child2 {
+   width: 100px;
+   height: 50px;
+   display: none;
+   position: absolute;
+   top: 42px;
+   left: 7px;
+ }
+ .Parent1:hover .child2 {
+   display: block;
+ }
+.child1:hover {
+   background-color: black;
+   color: white;
+}
+.options:hover {
+   background-color: brown;
+   color: white;
+}
+.Parent1:hover .child1 {
+   display: none;
+}
+
+.flex-parent {
+   height: 600px;
+   width: 100%;
+   border: 2px solid black;
+   background-color: blue; */
+   /* display: flex; */
+   /* justify-content: space-around; */
+   /* justify-content: space-between; */
+   /* justify-content: space-evenly; */
+   /* justify-content: center;
+   align-items: center; 
+   flex-wrap: wrap; */
+   /* display: grid;
+   grid-template-rows:  1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+.flex-child {
+   height: 150px;
+   width: 150px;
+   border: 1px solid black;
+   background-color: yellow;
+   font-size: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} */
+
+/* body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   perspective: 70px;
+   perspective-origin: top;
+}
+.transform-box {
+   font-size: 55px;
+   font-weight: 700;
+   height: 500px;
+   width: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(green,yellow,orange); */
+   /* transform: rotate(30deg); */
+   /* transform: skew(25deg); */
+   /* transform: translate(90px,50px); */
+   /* transform-style:preserve-3d;
+   transform: rotateX(7deg);
+} */
+
+/* .transition-ex {
+   height: 200px;
+   width: 200px;
+   background-color: blue;
+   transition: width 2s, height 2s, background-color 2s,linear 2s;
+}
+.transition-ex:hover {
+   width: 300px;
+   height: 300px;
+   background-color:red;
+} */
+/* body {
+   height: 100svh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+button {
+   height: 50px;
+   width: 120px;
+   position: relative;
+   padding: 10px;
+   border-radius: 15px;
+   font-weight: 900;
+   position: relative;
+   overflow: hidden;
+   transition: all 1s;
+}
+button::before {
+   content: "";
+   border-radius: 15px;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0%;
+   left: 120px;
+   background-color: purple;
+   transition: all 1s;
+}
+button:hover {
+   color: white;
+   z-index: 10;
+}
+button:hover::before {
+   left: 0%;
+   z-index: -20;
+} */
+
+/* body {
+   height: 100svh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   align-items: center;
+}
+.exit {
+   height: 60px;
+   width: 120px;
+   position: relative;
+   font-size: 20px;
+   padding: 15px;
+   font-weight: 700;
+   border-top-right-radius: 30px;
+   border-bottom-left-radius: 30px ;
+   position: relative;
+   overflow: hidden;
+   transition: all 1s;
+}
+.exit::before {
+   content: "";
+   border-top-right-radius: 30px;
+   border-bottom-left-radius: 30px ;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(to top,#2E3192 ,#ED1E79);
+   transform: translate(-140px,30px);
+   transition: all 0.5s;
+}
+.exit:hover {
+   color: white;
+   z-index: 10;
+}
+.exit:hover::before {
+   top: 0%;
+   transform: translate(0px,-16px);
+   left: 0%;
+   z-index: -20;
+} 
+
+
+
+.button2 {
+   height: 60px;
+   width: 210px;
+   position: relative;
+   font-size: 20px;
+   padding: 15px; 
+   font-weight: 700;
+   border-radius: 30px;
+   position: relative;
+   overflow: hidden;
+   transition:color 0.5s;
+}
+.button2::before {
+   content: "";
+   border-radius: 100%;
+   position: absolute;
+   height: 60px;
+   width: 60px;
+   background: linear-gradient(to top,#D4145A ,#FBB03B);
+   transition: all 0.5s;
+   top: 0%;
+   left: 0%;
+}
+.button2::after {
+   content: "";
+   border-radius: 30px;
+   position: absolute;
+   height: 60px;
+   width: 100%;
+   background: linear-gradient(to top,#D4145A ,#FBB03B);
+   transition: all 0.5s;
+   top: 0%;
+   left: -150px;
+}
+.button2:hover {
+   color: white;
+   z-index: 10;
+}
+.button2:hover::before {
+   left: 65%;
+   z-index: -30;
+} 
+.button2:hover::after {
+   left: 0%;
+   z-index: -20;
+}  */
+
+

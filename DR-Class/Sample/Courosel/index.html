@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- <link rel="stylesheet" href="../../Courosel/slick-1.8.1/slick-1.8.1/slick/slick.css"> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="inner_child c1"></div>
+        </div>
+        <div class="child">
+            <div class="inner_child c2"></div>
+        </div>
+        <div class="child">
+            <div class="inner_child c3"></div>
+        </div>
+        <div class="child">
+            <div class="inner_child c4"></div>
+        </div>
+        <div class="child">
+            <div class="inner_child c5"></div>
+        </div>
+        <div class="child">
+            <div class="inner_child c6"></div>
+        </div>
+        <div class="child">
+            <div class="inner_child c7"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="../../jquery.min.js"></script>
+    <script src="../../slick-1.8.1/slick/slick.min.js"></script> -->
+    <script>
+        $('.parent').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 1500,  
+            prevArrow : `<button class="but">&lt;</button>`,
+            nextArrow : `<button class="but">&gt;</button>`,
+            responsive: [
+                {
+                    breakpoint: 780,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow:2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>

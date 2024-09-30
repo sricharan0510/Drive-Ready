@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <form>
+      <p>Register Form</p>
+      <div>
+        <label>First Name :</label>
+        <input
+          type="text"
+          onchange="fun(event)"
+          name="Firstname"
+          class="fntf"
+        /><br /><br />
+        <label>Last Name :</label>
+        <input
+          type="text"
+          onchange="fun(event)"
+          name="Secondname"
+          class="fntf"
+        /><br /><br />
+        <label>Date of Birth :</label>
+        <input
+          type="date"
+          onchange="fun(event)"
+          name="Date of Birth"
+          class="dobtf"
+        />
+        <br /><br />
+        <label>Age : </label>
+        <input
+          type="number"
+          onchange="fun(event)"
+          name="age"
+          class="atf"
+        /><br /><br />
+        <label>Father name: </label>
+        <input
+          type="text"
+          onchange="fun(event)"
+          name="Father name"
+        /><br /><br />
+        <label>Mother name: </label>
+        <input
+          type="text"
+          onchange="fun(event)"
+          name="Mother name"
+        /><br /><br />
+        <label>Address :</label>
+        <input
+          type="text"
+          onchange="fun(event)"
+          name="Address"
+          class="adtf"
+        /><br /><br />
+        <label>Gender :</label>
+        <input
+          type="radio"
+          value="Male"
+          name="Gender"
+          onchange="fun(event)"
+          class="gtf"
+        />
+        <label>Male</label>
+        <input
+          type="radio"
+          value="Female"
+          name="Gender"
+          onchange="fun(event)"
+          class="gtf"
+        />
+        <label>Female</label><br /><br />
+      </div>
+      <div>
+        <label class="acad">Academic Details :</label>
+        <table>
+          <tr>
+            <td>Study</td>
+            <td>Year of Pass</td>
+            <td>Percentage</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td>SSC</td>
+            <td><input type="text" class="tabletf" /></td>
+            <td><input type="text" class="tabletf" /></td>
+            <td><input type="text" class="tabletf" /></td>
+          </tr>
+          <tr>
+            <td>Inter</td>
+            <td><input type="text" class="tabletf" /></td>
+            <td><input type="text" class="tabletf" /></td>
+            <td><input type="text" class="tabletf" /></td>
+          </tr>
+          <tr>
+            <td>B.Tech</td>
+            <td><input type="text" class="tabletf" /></td>
+            <td><input type="text" class="tabletf" /></td>
+            <td><input type="text" class="tabletf" /></td>
+          </tr>
+        </table>
+        <label>Certifications : </label>
+        <input
+          type="text"
+          onchange="fun(event)"
+          name="Certifications"
+        /><br /><br />
+        <label>Skills : </label>
+        <input
+          type="text"
+          onchange="fun(event)"
+          name="Skills"
+          class="stf"
+        /><br /><br />
+        <label>Hobbies : </label>
+        <input
+          type="text"
+          onchange="fun(event)"
+          name="Hobbies"
+          class="htf"
+        /><br /><br />
+        <label class="pp">Profile Pic</label>
+        <input
+          type="file"
+          onchange="fun(event)"
+          name="Profile Pic"
+        /><br /><br />
+      </div>
+      <button onclick="fun2(event)">Submit</button>
+    </form>
+  </body>
+</html>

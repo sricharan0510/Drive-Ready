@@ -1,0 +1,100 @@
+body {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.parent {
+    width: 1200px;
+    height: 500px;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    height: 250px !important;
+}
+
+.inner_child {
+    width: 90%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.5s;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-LT9W1bKS2InIw6_r923v47VVt9vjKZgFlg&s");
+    background-size: 100% 100%;
+}
+.c2 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiR6Rqt-fHbScsiP_Ut76knxgCfKrOFNdJmA&s");
+    background-size: 100% 100%;
+}
+.c3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPFCs9KffwsLudN99FAT5ifmNVgi22HzK6iA&s");
+    background-size: 100% 100%;
+}
+.c4 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeYJFah0Yd6tq7cQBPQRkzIm5GmgZJLfdXHQ&s");
+    background-size: 100% 100%;
+}
+.c4 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaFHgHQukNTiYsUtFsiPJ3uI7FlJuQkRoGoA&s");
+    background-size: 100% 100%;
+}
+.c5 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWvlwBtOv4Htfbp12Avxp8ga1IMhtm90a4JQ&s");
+    background-size: 100% 100%;
+}
+.c6 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeYJFah0Yd6tq7cQBPQRkzIm5GmgZJLfdXHQ&s");
+    background-size: 100% 100%;
+}
+.c7 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiRyzp7a4aJagYGU5yuqB_tBM30sRAiMH90A&s");;
+    background-size: 100% 100%;
+}
+.slick-current div {
+    transform: scale(1.12);
+}
+
+.slick-dots button{
+    display: none;
+}
+
+.slick-dots{
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: rgb(41, 39, 39);
+}
+
+.slick-dots li{
+    margin: 5px;
+}
+.but {
+    margin:0px 25px;
+    font-size: 25px;
+    font-weight: 600;
+    border-color: transparent;
+    color: chartreuse;
+    background-color: black;
+    padding: 10px;
+    border-radius: 100%;
+}
+.slick-active {
+    color:  chartreuse;
+}

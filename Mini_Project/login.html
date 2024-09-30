@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./Login_signUp.css" />
+</head>
+
+<body>
+  <div class="main-section">
+    <div class="academy-logo">
+      <img src="./Academy-logo.jpeg" class="academy-logo-img" />
+    </div>
+    <div class="academy-login">
+      <div class="login-container">
+        <div class="login-card">
+          <h2>Login</h2>
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="my-name">Username</label>
+              <input type="text" id="my-name" name="my-name" required />
+            </div>
+            <div class="form-group">
+              <label for="my-pass">Password</label>
+              <input type="password" id="my-pass" name="my-pass" required />
+            </div>
+            <button type="submit" id="login-button" onclick="login(event)">Login</button>
+          </form>
+          <div class="signup-link">
+            <p style="color: black;">Don't have an account? <span onclick="loginTOSignUp()"
+                class="login-SignUp">SignUp</span></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="signup-container">
+        <div class="signup-card">
+          <h2>Sign Up</h2>
+          <form id="signupForm">
+            <div class="form-group">
+              <label for="signup-username">Username</label>
+              <input type="text" id="signup-username" name="signup-username" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-email">Email</label>
+              <input type="email" id="signup-email" name="signup-email" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-pass">Password</label>
+              <input type="password" id="signup-pass" name="signup-pass" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-cfm-pass">Confirm Password</label>
+              <input type="password" id="signup-cfm-pass" name="signup-cfm-pass" required />
+            </div>
+            <button type="submit" onclick="signup(event)">Register</button>
+            <div class=" signup-link">
+              <p>Back to <span class="login-SignUp" onclick="SignUptoLogin()">LoginPage</span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./Academy.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.heroTwo {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+}
+.heroTwoDynamic {
+    font-size: 40px;
+    background-color: aqua;
+    color: blue;
+}

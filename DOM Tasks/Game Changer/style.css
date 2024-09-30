@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+}
+.my-tableData{
+    height: 70px;
+    width: 70px;
+}
+
+.my-table, .my-tableRow, .my-tableData {
+    border: 3px solid orange;
+    border-collapse: collapse;
+    margin:auto;
+    margin-top: 120px;
+}
+.my-image{
+    height: 60px;
+    width: 60px;
+    
+}
+.Button {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    height: 50px;
+    width: 80px;
+    font-size: 18px;
+    font-family: "Kanit";
+    border: 2px solid chartreuse;
+    border-radius: 20px;
+    margin: 10px;
+}
+.Button:hover {
+    border: transparent;
+    color: chartreuse;
+}
+.buttonsDivision {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+}
+.targetCell {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT15nDSJv6HJZbb7XOSgLIAK7s8wlLl0T1G6Q&s");
+    background-size: 100% 100%;
+}
+.scoreCard {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 12px;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    width: 80px;
+    font-size: 18px;
+    font-family: "Kanit";
+    border: 2px solid chartreuse;
+    border-radius: 20px;
+    margin: 10px;
+}

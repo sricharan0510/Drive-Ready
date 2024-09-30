@@ -1,0 +1,917 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: black;
+    height: 100svh;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+a {
+    color: chartreuse;
+    text-decoration: none;
+}
+
+.Academy-item a {
+    color: white;
+}
+.Academy-header {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.Academy-nav-bar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Academy-logo {
+    margin-left: 50px;
+    height: 100%;
+    width: 200px;
+    background-image: url(./Academy-logo.jpeg);
+    background-size: 100% 100%;
+}
+
+.Academy-item:hover {
+    cursor: pointer;
+}
+
+.Register_button {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid chartreuse;
+    position: relative;
+    top: 2%;
+    right: 5%;
+}
+
+.Register_button:hover {
+    color: chartreuse;
+    transform: scale(1.15);
+    border-color: transparent;
+}
+
+.Academy-nav-items {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.Academy-menu-bar {
+    display: none;
+    font-size: 24px;
+    color: white;
+    position: relative;
+    right: 50px;
+}
+
+.Academy-hero {
+    height: 85svh;
+    width: 100%;
+    background-image: url("./Academy-hero.jpg");
+    background-size: 100% 100%;
+}
+
+.About-us {
+    height: 100svh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: relative;
+    top: 4%;
+}
+
+.Main-Heading {
+    font-size: 32px;
+    font-family: "Roboto";
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 4%;
+    left: 40%;
+    font-weight: 500;
+    color: white;
+}
+
+.content {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.heading {
+    font-size: 32px;
+    font-family: "Kanit";
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    font-weight: 300;
+    color: white;
+    height: fit-content;
+    width: 50%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.matter {
+    padding: 30px;
+    line-height: 35px;
+    position: absolute;
+    top: 28%;
+    left: 7%;
+    font-family: "Roboto";
+    color: rgb(196, 187, 187);
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.middle-content {
+    color: white;
+    font-weight: 500;
+}
+
+.matter.visible,
+.heading.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.academy-pic-div {
+    height: 100%;
+    width: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.academy-pic {
+    height: 450px;
+    width: 420px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.academy-pic.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.sports {
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Main-Heading-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-family: "Roboto";
+    color: white;
+    font-weight: 500;
+}
+
+.cards {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 250px;
+    width: 350px;
+    border: 1px solid white;
+    border-radius: 13px;
+    box-shadow: 0px 0px 7px #CECCCC;
+    background-size: 100% 100%;
+    position: relative;
+    margin: 3%;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 1s ease, transform 1s ease;
+    overflow: hidden;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.name {
+    height: 25%;
+    width: 100%;
+    z-index: 10;
+    font-size: 24px;
+    font-family: "Roboto";
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card:hover .name {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fee-setion {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.Main-Heading-3 {
+    height: 15%;
+    width: 100%;
+    font-size: 32px;
+    font-family: "kanit";
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.fee-cards {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.fee-card {
+    height: 450px;
+    width: 300px;
+    border: 1px solid grey;
+    color: white;
+    position: relative;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.fee-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transform: skewY(-5deg);
+}
+
+.duration {
+    transform: skewY(5deg);
+    position: absolute;
+    top: 7%;
+    letter-spacing: 2px;
+    font-size: 18px;
+    left: 45%;
+    color: #F36100;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.fee-card-heading {
+    transform: skewY(5deg);
+    font-size: 28px;
+    font-family: "Kanit";
+    position: absolute;
+    top: 12%;
+    left: 10%;
+}
+
+.price {
+    position: absolute;
+    top: 22%;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-size: 60px;
+    color: #F36100;
+    left: 35%;
+}
+
+.description {
+    transform: skewY(5deg);
+    line-height: 40px;
+    position: absolute;
+    top: 45%;
+    left: 13%;
+    color: #aaa5a5;
+}
+
+.middle-content-2 {
+    position: absolute;
+    left: 25%;
+    font-weight: 600;
+    color: white;
+}
+
+.fee-card:hover {
+    background-color: white;
+    color: black;
+}
+
+.fee-card:hover .middle-content-2 {
+    color: black;
+}
+
+.fee-card:hover .description {
+    color: rgb(19, 17, 17);
+    font-weight: 400;
+}
+
+.Academy-footer {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: rgb(196, 187, 187);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Academy-footer-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Academy-footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+}
+
+.Academy-footer-logo-image {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 10px;
+}
+
+.Academy-footer-logo-matter {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.icons i {
+    font-size: 24px;
+    color: rgb(196, 187, 187);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons i:hover {
+    color: white;
+    transform: scale(1.15);
+}
+
+.Academy-footer-icons {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Academy-footer-icons .details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    color: white;
+}
+
+.Academy-footer-icons i {
+    font-size: 18px;
+    height: fit-content;
+    width: fit-content;
+    border: 4px solid #D1432D;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+.Academy-footer-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.line {
+    height: 1px;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    background-color: #aaa5a5;
+}
+
+.copyrights {
+    height: fit-content;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* ================================================================================================== */
+
+@media (max-width: 1080px) {
+    .Academy-nav-item {
+        overflow: hidden;
+    }
+    .Academy-nav-items {
+        display: flex; 
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: black;
+        padding: 10px 0;
+        overflow: hidden;
+        opacity: 0;
+        width: 0;
+        transition: width 1s, opacity 1s;
+        pointer-events: none; 
+    }
+    
+    .Academy-nav-items.show {
+        width: 100%;
+        opacity: 1;
+        pointer-events: auto; 
+    }
+    
+    
+
+    .Academy-nav-items.show {
+        display: flex;
+    }
+
+    .Academy-menu-bar {
+        display: block;
+    }
+
+    .Register_button {
+        left: 220px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Register_button {
+        left: 180px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Register_button {
+        left: 150px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .Academy-header {
+        height: 120px;
+    }
+
+    .Register_button {
+        left: 100px;
+        height: 40px;
+        width: 120px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Academy-logo-image {
+        width: 150px;
+    }
+
+    .Register_button {
+        left: 50px;
+        height: 40px;
+        width: 120px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Register_button {
+        left: 20px;
+        height: 40px;
+        width: 120px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .Register_button {
+        left: 0px;
+        height: 40px;
+        width: 120px;
+        font-size: 18px;
+    }
+
+    .Academy-menu-bar {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .Register_button {
+        left: 50px;
+        height: 30px;
+        width: 90px;
+        font-size: 15px;
+    }
+
+    .Academy-menu-bar {
+        font-size: 18px;
+    }
+
+    .Academy-logo {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .Register_button {
+        left: 30px;
+        height: 30px;
+        width: 90px;
+        font-size: 15px;
+    }
+
+    .Academy-menu-bar {
+        font-size: 16px;
+    }
+
+    .Academy-logo {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:365px) {
+    .Register_button {
+        left: 10px;
+        height: 25px;
+        width: 80px;
+        font-size: 15px;
+    }
+
+    .Academy-menu-bar {
+        font-size: 12px;
+    }
+
+    .Academy-logo {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .Academy-hero {
+        height: 80svh;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .Academy-hero {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:478px) {
+    .Academy-hero {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:320) {
+    .Academy-hero {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1177px) {
+    .academy-pic {
+        height: 400px;
+        width: 320px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:995px) {
+    .About-us {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .Main-Heading {
+        top: 2%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 24px;
+        width: 80%;
+    }
+
+    .matter {
+        width: 80%;
+    }
+
+    .academy-pic-div {
+        width: 100%;
+    }
+
+    .academy-pic {
+        height: 350px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .academy-pic {
+        height: 350px;
+        width: 500px;
+    }
+
+    .About-us {
+        height: 1100px;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .About-us {
+        height: 1200px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .About-us {
+        height: 1150px;
+    }
+
+    .Main-Heading {
+        top: 5%;
+        left: 35%;
+    }
+
+    .academy-pic {
+        height: 320px;
+        width: 470px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .About-us {
+        height: 1170px;
+        margin-bottom: 20px;
+    }
+
+    .matter {
+        font-size: 16px;
+    }
+
+    .academy-pic-div {
+        align-items: end;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .About-us {
+        height: 1000px;
+    }
+
+    .heading {
+        left: 100px;
+    }
+
+    .matter {
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .academy-pic-div {
+        align-items: center;
+        position: relative;
+    }
+
+    .academy-pic {
+        height: 200px;
+        width: 300px;
+        position: absolute;
+        top: 270px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .About-us {
+        height: 1100px;
+    }
+
+    .heading {
+        left: 80px;
+    }
+
+    .matter {
+        line-height: 30px;
+    }
+
+    .academy-pic {
+        height: 250px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:768) {
+    .fee-card {
+        height: 400px;
+        width: 250px;
+    }
+
+    .fee-card-heading {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media screen and(max-width:1000px) {
+    .fee-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .Main-Heading-3 {
+        font-size: 24px;
+    }
+
+    .fee-card {
+        height: 400px;
+        width: 250px;
+    }
+
+    .fee-card-heading {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Academy-footer {
+        height: 400px;
+        gap: 20px;
+    }
+
+    .Academy-footer-logo {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Academy-footer-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Academy-footer-icons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .Academy-footer-logo-image {
+        width: 250px;
+    }
+
+    .Academy-footer-logo-matter .icons {
+        margin: 30px 90px;
+    }
+
+    .Academy-foot11er- .details {
+        font-size: 14px;
+    }
+
+    .Academy-footer-icons i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .Academy-footer-logo-image {
+        width: 200px;
+    }
+
+    .Academy-footer-logo-matter {
+        font-size: 16px;
+    }
+
+    .Academy-footer-icons i {
+        font-size: 18px;
+    }
+
+    .Academy-footer-2 {
+        gap: 5px;
+    }
+
+    .Academy-footer-1 {
+        gap: 10px;
+    }
+
+    .Academy-footer {
+        height: 450px;
+    }
+
+    .Academy-footer-logo-matter .icons {
+        margin: 20px 40px;
+    }
+
+    .Academy-footer-logo-matter {
+        font-size: 14px;
+    }
+
+    .Academy-footer-icons .details {
+        font-size: 12px;
+    }
+
+    .Academy-footer-icons i {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1310px) {
+    Register_button {
+        right: 50px;
+    }
+}
